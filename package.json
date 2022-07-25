@@ -7,8 +7,10 @@
     "start": "nodemon server.js",
     "start:prod": "cross-env NODE_ENV=production nodemon server.js",
     "debug": "ndb server.js",
-    "watch:js": "parcel watch ./public/js/index.js --out-dir ./public/js --out-file bundle.js ",
-    "build:js": "parcel build ./public/js/index.js --out-dir ./public/js --out-file bundle.js "
+    "watch:js": "parcel watch ./public/js/index.js --out-dir ./public/js --out-file bundle.js",
+    "build:js": "parcel build ./public/js/index.js --out-dir ./public/js --out-file bundle.js",
+    "import-data": "node dummy-data/import-dev-data.js --import",
+    "delete-data": "node dummy-data/import-dev-data.js --delete"
   },
   "author": "Raj Gupta",
   "license": "ISC",
