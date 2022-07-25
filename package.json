@@ -32,6 +32,7 @@
     "multer": "^1.4.5-lts.1",
     "nodemailer": "^6.7.7",
     "nodemon": "^2.0.19",
+    "parcel-bundler": "^1.12.5",
     "pug": "^3.0.2",
     "sharp": "^0.30.7",
     "slugify": "^1.6.5",
@@ -40,7 +41,6 @@
     "xss-clean": "^0.1.1"
   },
   "devDependencies": {
-    "cross-env": "^7.0.3",
-    "parcel-bundler": "^1.12.5"
+    "cross-env": "^7.0.3"
   }
 }
