@@ -1,0 +1,23 @@
+{
+  "errors": {
+    "difficulty": {
+      "name": "ValidatorError",
+      "message": "Difficulty is either easy,med,difficulty",
+      "properties": {
+        "message": "Difficulty is either easy,med,difficulty",
+        "type": "enum",
+        "enumValues": ["easy", "medium", "difficult"],
+        "path": "difficulty",
+        "value": "whatever"
+      },
+      "kind": "enum",
+      "path": "difficulty",
+      "value": "whatever"
+    }
+  },
+  "_message": "Tour validation failed",
+  "statusCode": 500,
+  "status": "error",
+  "name": "ValidationError",
+  "message": "Tour validation failed: difficulty: Difficulty is either easy,med,difficulty"
+}

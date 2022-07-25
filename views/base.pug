@@ -1,0 +1,51 @@
+doctype html
+html
+    head
+        block head
+            meta(charset='UTF-8')
+            meta(name='viewport' content='width=device-width, initial-scale=1.0')
+            link(rel='stylesheet' href='/css/style.css')
+            link(rel='shortcut icon' type='image/png' href='/img/favicon.png')
+            link(rel='stylesheet' href='https://fonts.googleapis.com/css?family=Lato:300,300i,700')
+            script(src='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js')
+            link(href='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css' rel='stylesheet')
+            script(src='https://js.stripe.com/v3/')
+            title Natours | #{title}
+
+    body    
+        // HEADER 
+        include _header
+
+        div.spinner
+            img(src="/img/spinner.gif", alt="loader")
+
+        // CONTENT
+        block content 
+            h1 This is a placeholder heading
+
+
+
+        //FOOTER
+        include _footer
+
+        //- //map api
+        //- script(src='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js')
+        //- link(href='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css' rel='stylesheet')
+
+        //- script(src='https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js')
+        //- script(src='/js/login.js')
+
+
+        script(src='/js/mapbox.js')
+        script(src='/js/bundle.js')
+        
+
+
+
+
+
+
+
+
+
+

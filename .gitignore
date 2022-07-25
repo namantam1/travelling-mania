@@ -1,0 +1,6 @@
+.cache
+node_modules
+config.env
+dev-data
+public/img/tours
+public/img/users
