@@ -19,6 +19,6 @@
     "STRIPE_SECRET_KEY": {}
   },
   "scripts": {
-    "postdeploy": "node run dummy-data\\data\\import-dev-data.js --import"
+    "postdeploy": "node dummy-data/data/import-dev-data.js --import"
   }
 }
