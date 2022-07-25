@@ -1,0 +1,24 @@
+{
+  "name": "Natours",
+  "description": "A simple web app",
+  "env": {
+    "JWT_SECRET": {
+      "description": "A secret key for verifying the integrity of signed cookies.",
+      "generator": "secret"
+    },
+    "DATABASE": {
+      "description": "Go to https://cloud.mongodb.com create a database and generate access url with sufficient permission and paste here. It will be in the format `mongodb+srv://<username>:<password>@<host>`"
+    },
+    "CLOUDINARY_URL": {
+      "description": "Go to https://cloudinary.com create an accout and from dashboard paste access url. It will be in the format `cloudinary://<access>:<secret>@<cloud>`"
+    },
+    "EMAIL_USERNAME": {
+      "description": "Gmail only"
+    },
+    "EMAIL_PASSWORD": {},
+    "STRIPE_SECRET_KEY": {}
+  },
+  "scripts": {
+    "postdeploy": "node run dummy-data\\data\\import-dev-data.js --import"
+  }
+}
