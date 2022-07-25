@@ -10,6 +10,9 @@ process.on('uncaughtException', (err) => {
 });
 
 // dotenv.config({ path: './config.env' });
+dotenv.config({
+  path: `./.env${process.env.NODE_ENV === 'production' ? '' : '.test'}`,
+});
 const app = require('./app');
 
 // console.log(process.env);
